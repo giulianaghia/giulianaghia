@@ -1,39 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giuliana Ghia</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        header nav ul li {
+            display: inline;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .sidebar h2 {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .sidebar p {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .sidebar .links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .sidebar .links a {
+            display: block;
+            text-decoration: none;
+            color: #007bff;
+            margin: 5px 0;
+        }
+        .content {
+            width: 75%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            font-size: 28px;
+            margin-top: 0;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Giuliana Ghia</h1>
+        <h1>GIULIANA GHIA</h1>
         <nav>
-            <a href="#">About</a>
-            <a href="#">CV</a>
-            <a href="blog\index.html">Blog</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="profile">
-        <div class="photo">
-            <img src="profile-picture.jpeg" alt="Giuliana Ghia" style="width:600px;height:400px;">
-        </div>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="profile-picture.jpeg" alt="Giuliana Ghia">
+            <h2>Giuliana Ghia</h2>
+            <div class="links">
+           <a href="https://x.com/GhiaGiuliana?t=f5maFdT4KefNGFWZmCtK_Q&s=08"> Twitter </a>
+            </div>
+        </aside>
 
-        <div class="about">
-            <h3>About</h3>
-            <p> Ciao! Welcome to my website!
+        <div class="content">
+            <h2>About me</h2>
+<p> Ciao! Welcome to my website!
             <p> 
 I am a second-year Ph.D. in Economics at <a href="https://www.su.se/english/profiles/gigh6797-1.661797">Stockholm University</a> and a Research Assistant at the <a href="https://www.su.se/institute-for-international-economic-studies/"> Institute for International Economic Studies</a> (IIES). 
 <p>         
 I am interested in understanding how culture and identity shape people’s economic and social behavior, with a specific focus on the evolution of social norms and human capital investments in both developed and developing settings. 
 <p>
-I earned a MSc in Economic and Social Sciences from <a href="https://www.unibocconi.it/en"> Bocconi University</a> and a MRes in Economics from the <a href="https://www.eui.eu/en/academic-units/department-of-economics"> European University Institute</a>. Prior to starting my Ph.D., I worked for several years as a Field Coordinator for ERC and J-PAL funded RCTs in the domain of development and education.
+I earned a MSc in Economic and Social Sciences from <a href="https://www.unibocconi.it/en"> Bocconi University</a> and a MRes in Economics from the <a href="https://www.eui.eu/en/academic-units/department-of-economics"> European University Institute</a>. Prior to starting my Ph.D., I worked for several years as a Field Coordinator for ERC and J-PAL funded RCTs.
 
 </p>
         </div>
-    </section>
+    </div>
 </body>
 </html>
-
