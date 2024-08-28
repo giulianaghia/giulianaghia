@@ -18,6 +18,12 @@ nav a {
     color: white;
 }
 
+.profile-picture {
+            width: 200px; /* Increase this value to make the picture bigger */
+            height: auto;
+            border-radius: 50%;
+}
+
 .profile {
     max-width: 600px;
     margin: 20px auto;
