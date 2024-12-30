@@ -3,37 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giuliana Ghia</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Giuliana Ghia - Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .subheading {
+            color: #666;
+            font-size: 18px;
+            margin: 5px 0 15px 0;
+        }
+        .photo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .photo img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .about {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .about h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .about p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .about a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .about a:hover {
+            text-decoration: underline;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            background-color: #0077b5; /* LinkedIn blue */
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .social-links a.twitter {
+            background-color: #1da1f2; /* Twitter blue */
+        }
+        .social-links a.email {
+            background-color: #d14836; /* Email red */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Giuliana Ghia</h1>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">CV</a>
-            <a href="blog\index.html">Blog</a>
-        </nav>
-    </header>
-
-    <section class="profile">
+    <div class="container">
+        <div class="header">
+            <img src="profile.jpg" alt="Giuliana Ghia" class="profile-img">
+            <h1>Giuliana Ghia</h1>
+            <p class="subheading">Second-Year Ph.D. Student<br>Department of Economics, Stockholm University</p>
+        </div>
         <div class="photo">
             <img src="profile-picture.jpeg" alt="Giuliana Ghia" style="width:600px;height:400px;">
         </div>
-
         <div class="about">
             <h3>About</h3>
-            <p> Ciao! Welcome to my website!
-            <p> 
-I am a second-year Ph.D. in Economics at <a href="https://www.su.se/english/profiles/gigh6797-1.661797">Stockholm University</a> and a Research Assistant at the <a href="https://www.su.se/institute-for-international-economic-studies/"> Institute for International Economic Studies</a> (IIES). 
-<p>         
-I am interested in understanding how culture and identity shape people’s economic and social behavior, with a specific focus on the evolution of social norms and human capital investments in both developed and developing settings. 
-<p>
-I earned a MSc in Economic and Social Sciences from <a href="https://www.unibocconi.it/en"> Bocconi University</a> and a MRes in Economics from the <a href="https://www.eui.eu/en/academic-units/department-of-economics"> European University Institute</a>. Prior to starting my Ph.D., I worked for several years as a Field Coordinator for ERC and J-PAL funded RCTs in the domain of development and education.
-
-</p>
+            <p>Ciao! Welcome to my website!</p>
+            <p>
+                I am a second-year Ph.D. in Economics at 
+                <a href="https://www.su.se/english/profiles/gigh6797-1.661797">Stockholm University</a> 
+                and a Research Assistant at the 
+                <a href="https://www.su.se/institute-for-international-economic-studies/">Institute for International Economic Studies</a> (IIES).
+            </p>
+            <p>
+                I am interested in understanding how culture and identity shape people’s economic and social behavior, 
+                with a specific focus on the evolution of social norms and human capital investments in both developed 
+                and developing settings.
+            </p>
+            <p>
+                I earned a MSc in Economic and Social Sciences from 
+                <a href="https://www.unibocconi.it/en">Bocconi University</a> and a MRes in Economics from the 
+                <a href="https://www.eui.eu/en/academic-units/department-of-economics">European University Institute</a>. 
+                Prior to starting my Ph.D., I worked for several years as a Field Coordinator for ERC and J-PAL 
+                funded RCTs in the domain of development and education.
+            </p>
         </div>
-    </section>
+        <div class="social-links">
+            <a href="mailto:email@example.com" class="email">✉</a>
+            <a href="https://twitter.com/example" target="_blank" class="twitter">T</a>
+        </div>
+    </div>
 </body>
 </html>
-
