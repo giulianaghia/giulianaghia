@@ -3,129 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Giuliana Ghia - Profile</title>
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #ffffff;
-            padding: 10px 20px;
-            border-bottom: 1px solid #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        header nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-        header nav ul li {
-            display: inline;
-        }
-        header nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        header nav ul li a:hover {
-            text-decoration: underline;
+            background-color: #f9f9f9;
         }
         .container {
-            display: flex;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .sidebar {
-            width: 25%;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .header {
+            text-align: center;
         }
-        .sidebar img {
-            width: 100px;
-            height: 100px;
+        .profile-img {
             border-radius: 50%;
-            display: block;
-            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
-        .sidebar h2 {
-            text-align: center;
-            font-size: 22px;
-            margin-top: 10px;
-        }
-        .sidebar p {
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-        }
-        .sidebar .links {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .sidebar .links a {
-            display: block;
-            text-decoration: none;
-            color: #007bff;
-            margin: 5px 0;
-        }
-        .content {
-            width: 75%;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .content h2 {
-            font-size: 28px;
-            margin-top: 0;
-        }
-        .content p {
-            font-size: 16px;
-            line-height: 1.6;
+        h1 {
+            margin: 10px 0;
+            font-size: 24px;
             color: #333;
+        }
+        .subheading {
+            color: #666;
+            font-size: 18px;
+            margin: 5px 0 15px 0;
+        }
+        .photo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .photo img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .about {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .about h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .about p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .about a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .about a:hover {
+            text-decoration: underline;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            background-color: #0077b5; /* LinkedIn blue */
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .social-links a.twitter {
+            background-color: #1da1f2; /* Twitter blue */
+        }
+        .social-links a.email {
+            background-color: #d14836; /* Email red */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>GG Giuliana Ghia</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resources.html">Resources for RA</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <div class="container">
-        <aside class="sidebar">
-            <img src="your-photo.jpg" alt="Your Photo">
-            <h2>Giuliana Ghia</h2>
-            <p>Hi all! Welcome to my website!</p>
-            <div class="links">
-           <a href="#">🐦 Twitter</a>
-            </div>
-        </aside>
-
-        <div class="content">
-            <h2>About</h2>
-            <p>I am a second-year Ph.D. in Economics at Stockholm University and a Research Assistant at the Institute for International Economic Studies (IIES). I am interested in understanding how culture and identity shape people’s economic and social behavior, with a specific focus on the evolution of social norms and human capital investments in both developed and developing settings.</p>
-            <p>I earned a Master of Science in Economics and Social Sciences from Bocconi University and a Master of Research in Economics from the European University Institute.</p>
-            <p>Prior to starting my Ph.D., I worked for several years as a Field Coordinator for ERC and J-PAL funded RCTs in the domain of development and education.</p>
+        <div class="header">
+            <img src="profile.jpg" alt="Giuliana Ghia" class="profile-img">
+            <h1>Giuliana Ghia</h1>
+            <p class="subheading">Second-Year Ph.D. Student<br>Department of Economics, Stockholm University</p>
+        </div>
+        <div class="photo">
+            <img src="profile-picture.jpeg" alt="Giuliana Ghia" style="width:600px;height:400px;">
+        </div>
+        <div class="about">
+            <h3>About</h3>
+            <p>Ciao! Welcome to my website!</p>
+            <p>
+                I am a second-year Ph.D. in Economics at 
+                <a href="https://www.su.se/english/profiles/gigh6797-1.661797">Stockholm University</a> 
+                and a Research Assistant at the 
+                <a href="https://www.su.se/institute-for-international-economic-studies/">Institute for International Economic Studies</a> (IIES).
+            </p>
+            <p>
+                I am interested in understanding how culture and identity shape people’s economic and social behavior, 
+                with a specific focus on the evolution of social norms and human capital investments in both developed 
+                and developing settings.
+            </p>
+            <p>
+                I earned a MSc in Economic and Social Sciences from 
+                <a href="https://www.unibocconi.it/en">Bocconi University</a> and a MRes in Economics from the 
+                <a href="https://www.eui.eu/en/academic-units/department-of-economics">European University Institute</a>. 
+                Prior to starting my Ph.D., I worked for several years as a Field Coordinator for ERC and J-PAL 
+                funded RCTs in the domain of development and education.
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="mailto:email@example.com" class="email">✉</a>
+            <a href="https://twitter.com/example" target="_blank" class="twitter">T</a>
         </div>
     </div>
 </body>
